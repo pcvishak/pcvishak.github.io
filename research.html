@@ -2,10 +2,153 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="refresh" content="0; url=index.html" />
-  <title>Redirecting…</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research — Vishak Prasad C.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "DM Sans", system-ui, sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.75;
+      color: #1c1b19;
+      background: #f0ede8;
+      min-height: 100vh;
+      padding: 72px 24px 96px;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #7a6e5f;
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      border-bottom: 1px solid #c8bfb0;
+      padding-bottom: 1px;
+      margin-bottom: 48px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .back-link:hover {
+      color: #1c1b19;
+      border-color: #1c1b19;
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #a09585;
+      margin-bottom: 24px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd9d2;
+    }
+
+    .publications {
+      list-style: none;
+    }
+
+    .publications li {
+      margin-bottom: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #e4e0da;
+    }
+
+    .publications li:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .publications a.title {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #1c1b19;
+      text-decoration: underline;
+      text-decoration-color: #bbb4a8;
+      text-underline-offset: 3px;
+      transition: text-decoration-color 0.15s;
+    }
+
+    .publications a.title:hover {
+      text-decoration-color: #1c1b19;
+    }
+
+    .publications .venue {
+      display: block;
+      font-size: 0.85rem;
+      color: #7a6e5f;
+      margin-top: 4px;
+    }
+
+    .publications a.code {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: #6b5f50;
+      text-decoration: none;
+      border: 1px solid #c4b9aa;
+      border-radius: 3px;
+      padding: 1px 7px;
+      margin-left: 8px;
+      vertical-align: middle;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    .publications a.code:hover {
+      background: #e8e2d9;
+      border-color: #a09585;
+    }
+  </style>
 </head>
 <body>
-  <p><a href="index.html">Click here</a> if you are not redirected.</p>
+  <div class="container">
+
+    <a class="back-link" href="index.html">← Vishak Prasad C.</a>
+
+    <p class="section-label">Research</p>
+
+    <ul class="publications">
+
+      <li>
+        <a class="title" href="https://arxiv.org/abs/2011.11538">Exploring Alternatives to Softmax Function</a>
+        <a class="code" href="https://github.com/kunalbanerjee/softmax_alternatives">code</a>
+        <span class="venue">Deep Learning Theory and Applications (DeLTA), July 2021, pp. 81–86</span>
+      </li>
+
+      <li>
+        <a class="title" href="https://arxiv.org/abs/2210.03324">AutoML for Climate Change: A Call to Action</a>
+        <a class="code" href="https://github.com/climate-change-automl/climate-change-automl">code</a>
+        <span class="venue">Tackling Climate Change with Machine Learning Workshop at NeurIPS 2022</span>
+      </li>
+
+      <li>
+        <a class="title" href="https://arxiv.org/abs/2305.02997">When Do Neural Nets Outperform Boosted Trees on Tabular Data?</a>
+        <a class="code" href="https://github.com/naszilla/tabzilla">code</a>
+        <span class="venue">NeurIPS Datasets and Benchmarks Track 2023</span>
+      </li>
+
+      <li>
+        <a class="title" href="https://openreview.net/attachment?id=hRqiQ2i5ps&name=pdf">Speeding up NAS with Adaptive Subset Selection</a>
+        <a class="code" href="https://github.com/pcvishak/SubsetSelection_NAS">code</a>
+        <span class="venue">International Conference on Automated Machine Learning (AutoML) 2024</span>
+      </li>
+
+    </ul>
+
+  </div>
 </body>
 </html>
